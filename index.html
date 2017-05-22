@@ -4,7 +4,7 @@
 <title></title>
 <meta name="generator" content="Bluefish 2.2.7" >
 <meta name="author" content="Anton Yun" >
-<meta name="date" content="2017-05-22T19:51:28+0800" >
+<meta name="date" content="2017-05-22T20:51:01+0800" >
 <meta name="copyright" content="">
 <meta name="keywords" content="">
 <meta name="description" content="">
@@ -17,47 +17,82 @@
 <style type="text/css">
 .container{
 	display: grid;
-	grid-template-columns: 15% 200px auto 150px;
-	grid-template-rows: auto 100px auto;
+	grid-template-columns: 200px repeat(6, 1fr);
+	grid-template-rows: auto auto 80px auto auto;
+	grid-column-gap: 10px;
+	grid-row-gap: 10px;
 }
-.item-1 {
+#logo {
+	grid-area: 1 / 1 / 4 / 2;
+	text-align: center;
 	border-width: thin;
 	border-style: solid;
 	border-color: salmon;
-	text-align: center;
 }
-.item-2 {
-	border-width: thin;
-	border-style: solid;
-	border-color: grey;
+#company-name {
+	grid-area: 1 / 2 / 2 / 4;
 	text-align: center;
-}
-#xiaodong{
 	font-weight: bold;
 	font-size: 32px;
 	font-family: sans-serif;
 	color: #262261;
+	border-width: thin;
+	border-style: solid;
+	border-color: salmon;
 }
-#it-consulting{
+#company-title {
+	grid-area: 2 / 2 / 3 / 4;
+	text-align: center;
 	font-weight: normal;
 	font-size: 24px;
 	font-family: sans-serif;
 	color: #696969;
+	border-width: thin;
+	border-style: solid;
+	border-color: salmon;
 }
-.item-3 {
-	text-align: center;
+nav {
+	grid-area: 2 / 4 / 3 / 8;
+	border-width: thin;
+	border-style: solid;
+	border-color: salmon;
+}
+#article {
+	grid-area: 3 / 2 / 5 / 7;
+	border-width: thin;
+	border-style: solid;
+	border-color: salmon;
+}
+footer {
+	grid-area: 5 / 1 / 6 / 8;
+	border-width: thin;
+	border-style: solid;
+	border-color: salmon;
 }
 </style>
 </head>
 <body>
 <div class="container">
-	<div class="item item-1"><img src="logo_160.png" alt="logo"></div>
-	<div class="item item-2"><div id="xiaodong">XIAODONG</div><div id="it-consulting">IT Consulting</div></div>
-	<div class="item item-3">element 3</div>
-	<div class="item item-4">element 4</div>
-	<div class="item item-5">element 5</div>
-	<div class="item item-6">element 6</div>
+	<div id="logo"><img src="logo_160.png" alt="logo"></div>
+	<div id="company-name">XIAODONG</div>
+	<div id="company-title">IT Consulting</div>
+	<nav>Home | Service | About Us | Contact</nav>
+	<div id="home">HOME</div>
+	<div class="item item-4">SERVICE</div>
+	<div class="item item-5">ABOUT US</div>
+	<div class="item item-6">CONTACT</div>
 	<div class="item item-7">CSS Grid Layer. My first steps...</div>
+	<div id="article">
+		<p>Defines a grid template by referencing the names of the grid areas which are specified with the grid-area property. Repeating the name of a grid area causes the content to span those cells. A period signifies an empty cell. The syntax itself provides a visualization of the structure of the grid.</p>
+		<p>Defines a grid template by referencing the names of the grid areas which are specified with the grid-area property. Repeating the name of a grid area causes the content to span those cells. A period signifies an empty cell. The syntax itself provides a visualization of the structure of the grid.</p>
+		<p>Defines a grid template by referencing the names of the grid areas which are specified with the grid-area property. Repeating the name of a grid area causes the content to span those cells. A period signifies an empty cell. The syntax itself provides a visualization of the structure of the grid.</p>
+		<p>Defines a grid template by referencing the names of the grid areas which are specified with the grid-area property. Repeating the name of a grid area causes the content to span those cells. A period signifies an empty cell. The syntax itself provides a visualization of the structure of the grid.</p>
+		<p>Defines a grid template by referencing the names of the grid areas which are specified with the grid-area property. Repeating the name of a grid area causes the content to span those cells. A period signifies an empty cell. The syntax itself provides a visualization of the structure of the grid.</p>
+		<p>Defines a grid template by referencing the names of the grid areas which are specified with the grid-area property. Repeating the name of a grid area causes the content to span those cells. A period signifies an empty cell. The syntax itself provides a visualization of the structure of the grid.</p>
+		<p>Defines a grid template by referencing the names of the grid areas which are specified with the grid-area property. Repeating the name of a grid area causes the content to span those cells. A period signifies an empty cell. The syntax itself provides a visualization of the structure of the grid.</p>
+		<p>Defines a grid template by referencing the names of the grid areas which are specified with the grid-area property. Repeating the name of a grid area causes the content to span those cells. A period signifies an empty cell. The syntax itself provides a visualization of the structure of the grid.</p>
+	</div>
+	<footer>footer</footer>
 </div>
 </body>
 </html>
