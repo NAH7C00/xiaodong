@@ -4,7 +4,7 @@
 <title></title>
 <meta name="generator" content="Bluefish 2.2.7" >
 <meta name="author" content="Anton Yun" >
-<meta name="date" content="2017-05-22T18:59:33+0800" >
+<meta name="date" content="2017-05-22T19:51:28+0800" >
 <meta name="copyright" content="">
 <meta name="keywords" content="">
 <meta name="description" content="">
@@ -15,10 +15,49 @@
 <meta http-equiv="expires" content="0">
 <link href="" rel="stylesheet" type="text/css">
 <style type="text/css">
-
+.container{
+	display: grid;
+	grid-template-columns: 15% 200px auto 150px;
+	grid-template-rows: auto 100px auto;
+}
+.item-1 {
+	border-width: thin;
+	border-style: solid;
+	border-color: salmon;
+	text-align: center;
+}
+.item-2 {
+	border-width: thin;
+	border-style: solid;
+	border-color: grey;
+	text-align: center;
+}
+#xiaodong{
+	font-weight: bold;
+	font-size: 32px;
+	font-family: sans-serif;
+	color: #262261;
+}
+#it-consulting{
+	font-weight: normal;
+	font-size: 24px;
+	font-family: sans-serif;
+	color: #696969;
+}
+.item-3 {
+	text-align: center;
+}
 </style>
 </head>
 <body>
-index.html
+<div class="container">
+	<div class="item item-1"><img src="logo_160.png" alt="logo"></div>
+	<div class="item item-2"><div id="xiaodong">XIAODONG</div><div id="it-consulting">IT Consulting</div></div>
+	<div class="item item-3">element 3</div>
+	<div class="item item-4">element 4</div>
+	<div class="item item-5">element 5</div>
+	<div class="item item-6">element 6</div>
+	<div class="item item-7">CSS Grid Layer. My first steps...</div>
+</div>
 </body>
 </html>
