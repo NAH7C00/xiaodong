@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title></title>
+<title>XIAODONG IT Consulting</title>
 <meta name="generator" content="Bluefish 2.2.7" >
 <meta name="author" content="Anton Yun" >
-<meta name="date" content="2017-05-22T23:27:20+0800" >
+<meta name="date" content="2017-05-23T19:21:01+0800" >
 <meta name="copyright" content="">
 <meta name="keywords" content="">
 <meta name="description" content="">
@@ -13,8 +13,13 @@
 <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8">
 <meta http-equiv="content-style-type" content="text/css">
 <meta http-equiv="expires" content="0">
+<link href="favicon.ico" rel="shortcut icon" type="image/png">
 <link href="" rel="stylesheet" type="text/css">
 <style type="text/css">
+	body{
+		margin: 0;
+		color: #696969;	
+	}
 	/* grid */
 	.container {
 		display: grid;
@@ -26,52 +31,258 @@
 	/* specific item styles */
   
  	.container > * {
-		background-color: lightblue;
+		background-color: inherit;
 	}
-		
-	@media only screen and (min-width: 600px) {
-
+	@media only screen and (min-width: 1000px) and (max-width: 1239px) {
+	
 		/* grid */
 		.container {
-			grid-template-columns: 1fr minmax(100px, 1fr) repeat(10, 1fr);
+			grid-template-columns: repeat(10, 1fr);
+			grid-template-rows: 20px auto;
 			grid-column-gap: 10px;
 			grid-row-gap: 10px;
 		}
 
 		/* specific item styles */
-	  
-	 	.container header {
-			grid-area: 1 / 2 / 2 / 3;
+		.container .empty-row {
+			grid-area: 1 / 1 / 2 / 11;
 		}
+		
+		.container .logo {
+			grid-area: 2 / 2 / 3 / 3;
+			justify-self: center;
+			align-self: center;
+		}
+		
+		.container .logo img{
+			width: 100%;
+		}
+
+		.container header {
+			grid-area: 2 / 3 / 3 / 5;
+			justify-self: center;
+			align-self: center;
+		}
+		
+		.container header img{
+			width: 100%;
+		}		
+		
 		.container nav {
-			grid-area: 1 / 5 / 2 / 12;
-			background-color: lightblue;
+			grid-area: 3 / 2 / 4 / 10;
+			align-self: center;
 		}
+		
+		.container nav ul {
+			padding-left: 0;
+			padding-right: 0;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			background-color: #F5F5F5;
+		}
+		
+		.container nav ul li {
+			display: inline;
+			list-style-type: none;
+			margin-left: 20px;
+			margin-right: 20px;
+			font-size: 22px;
+			font-family: 'Source Sans Pro', sans-serif;
+			font-weight: bold;
+		}
+
 		.container section {
-			grid-area: 2 / 3 / 3 / 12;
+			grid-column: 2 / 10;
 		}
+		
+		.container section h1 {
+			font-size: 26px;
+			font-family: sans-serif;
+			font-weight: bolder;
+			color: #262261;
+		}
+		.container section p {
+			font-size: 16px;
+			font-family: sans-serif;
+			font-weight: normal;
+			color: inherit;
+		}
+		.container section p span {
+			font-size: 16px;
+			font-family: sans-serif;
+			font-weight: normal;
+			color: #FC3468;
+		}
+		
 		.container footer {
-			grid-area: 3 / 1 / 4 / 13;
-			background-color: lightblue;
+			grid-column: 1 / 11;
+			text-align: center;
+			background-color: #F5F5F5;
+		}
+		.container footer img {
+			margin-top: 10px;
+		}
+		
+		.container footer h6 {
+			margin-top: 0;
+			margin-bottom: 10px;
+		}
+	}
+		
+	@media only screen and (min-width: 1240px) {
+
+		/* grid */
+		.container {
+			grid-template-columns: repeat(10, 1fr);
+			grid-template-rows: 20px auto;
+			grid-column-gap: 10px;
+			grid-row-gap: 10px;
+		}
+
+		/* specific item styles */
+		.container .empty-row {
+			grid-area: 1 / 1 / 2 / 11;
+		}
+		
+		.container .logo {
+			grid-area: 2 / 2 / 3 / 3;
+			justify-self: center;
+			align-self: center;
+		}
+
+		.container .logo img{
+			width: 100%;
+		}
+
+		.container header {
+			grid-area: 2 / 3 / 3 / 5;
+			justify-self: center;
+			align-self: center;
+		}
+		
+		.container header img{
+			width: 100%;
+		}		
+		
+		.container nav {
+			grid-area: 2 / 5 / 3 / 10;
+			align-self: center;
+		}
+		
+		.container nav ul {
+			padding-left: 0;
+			padding-right: 0;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			background-color: #F5F5F5;
+		}
+		
+		.container nav ul li {
+			display: inline;
+			list-style-type: none;
+			margin-left: 20px;
+			margin-right: 20px;
+			font-size: 22px;
+			font-family: 'Source Sans Pro', sans-serif;
+			font-weight: bold;
+		}
+
+		.container section {
+			grid-column: 2 / 10;
+		}
+		
+		.container section h1 {
+			font-size: 26px;
+			font-family: sans-serif;
+			font-weight: bolder;
+			color: #262261;
+		}
+		.container section p {
+			font-size: 16px;
+			font-family: sans-serif;
+			font-weight: normal;
+			color: inherit;
+		}
+		.container section p span {
+			font-size: 16px;
+			font-family: sans-serif;
+			font-weight: normal;
+			color: #FC3468;
+		}
+		
+		.container footer {
+			grid-column: 1 / 11;
+			text-align: center;
+			background-color: #F5F5F5;
+		}
+		.container footer img {
+			margin-top: 10px;
+		}
+		
+		.container footer h6 {
+			margin-top: 0;
+			margin-bottom: 10px;
 		}
 	}
 </style>
 </head>
 <body>
 <div class="container">
-	<header><img src="logo.png" alt="logo" width="100%"></header>
-	<nav>Home | Service | About Us | Contact</nav>
+	<div class="empty-row"></div>
+	<div class="logo"><img src="logo.png" alt="logo"></div>
+	<header><img src="name.png" alt="XIAODONG IT Consulting"></header>
+	<nav>
+		<ul>
+			<li>HOME</li>
+			<li>SERVICES</li>
+			<li>ABOUT US</li>
+			<li>CONTACT</li>
+		</ul>
+	</nav>
 	<section>
-		<p>Defines a grid template by referencing the names of the grid areas which are specified with the grid-area property. Repeating the name of a grid area causes the content to span those cells. A period signifies an empty cell. The syntax itself provides a visualization of the structure of the grid.</p>
-		<p>Defines a grid template by referencing the names of the grid areas which are specified with the grid-area property. Repeating the name of a grid area causes the content to span those cells. A period signifies an empty cell. The syntax itself provides a visualization of the structure of the grid.</p>
-		<p>Defines a grid template by referencing the names of the grid areas which are specified with the grid-area property. Repeating the name of a grid area causes the content to span those cells. A period signifies an empty cell. The syntax itself provides a visualization of the structure of the grid.</p>
-		<p>Defines a grid template by referencing the names of the grid areas which are specified with the grid-area property. Repeating the name of a grid area causes the content to span those cells. A period signifies an empty cell. The syntax itself provides a visualization of the structure of the grid.</p>
-		<p>Defines a grid template by referencing the names of the grid areas which are specified with the grid-area property. Repeating the name of a grid area causes the content to span those cells. A period signifies an empty cell. The syntax itself provides a visualization of the structure of the grid.</p>
-		<p>Defines a grid template by referencing the names of the grid areas which are specified with the grid-area property. Repeating the name of a grid area causes the content to span those cells. A period signifies an empty cell. The syntax itself provides a visualization of the structure of the grid.</p>
-		<p>Defines a grid template by referencing the names of the grid areas which are specified with the grid-area property. Repeating the name of a grid area causes the content to span those cells. A period signifies an empty cell. The syntax itself provides a visualization of the structure of the grid.</p>
-		<p>Defines a grid template by referencing the names of the grid areas which are specified with the grid-area property. Repeating the name of a grid area causes the content to span those cells. A period signifies an empty cell. The syntax itself provides a visualization of the structure of the grid.</p>
+		<h1>Welcome to XIAODONG IT Consulting</h1>
+		<p>XIAODONG is profecional IT consulting for business organizations.
+		We focuse on advising organizations on how best to use information technology
+		in achieving their business objectives, provide advice, estimate, manage,
+		implement, deploy, and administer IT systems on behalf of their client organizations.</p>
 	</section>
-	<footer>footer</footer>
+	<section>
+		<h1>XIAODONG Services</h1>
+		<p>We offer:
+			<ul>
+				<li>Learn and analyse business process</li>
+				<li>Visualize business process by <b>Unified Modeling Language</b></li>
+				<li>Develop effective functional model of business process</li>
+				<li>Create <b>MySQL/Oracle</b> based IT system for its effective control</li>
+				<li>Install and manage <b>Linux</b> based servers</li>
+				<li>Build corporative local network with security items</li>
+				<li>Create your company’s <b>web-site design</b> to achieve high users usability</li>
+				<li><b>Back-end</b> & <b>Front-end</b> Web development for effective relations with your customers</li>				
+				<li>Develope special software solutions (<b>Android OS Apps</b>, thick clients)</li>
+			</ul>
+			We use GIT version control system on each step for easy cooperation with our clients. 
+		</p>
+	</section>
+	<section>
+		<h1>About Us</h1>
+		<p>Our advantages:
+			<ul>
+				<li>We use version control system Git for coordinate work and real-time cooperate with our clients
+				on each step execution of projects.</li>
+				<li>We use The Unified Modeling Language (UML), that is intended to provide a standard way to visualize
+				the design of a system.</li>
+			</ul>
+		</p>
+	</section>
+	<section>
+		<h1>Contact</h1>
+		<p>XIAODONG IT consulting</p>
+		<p><span>E-mail:</span> @gmail.com</p>
+	</section>
+	<footer>
+		<img src="logo.png" alt="logo" width="64" height="64">
+		<h6>Copyright © 2016 - 2017 XIAODONG IT Consulting </h6>
+	</footer>
 </div>
 </body>
 </html>
