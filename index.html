@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>XIAODONG IT Consulting</title>
+<title></title>
 <meta name="generator" content="Bluefish 2.2.7" >
 <meta name="author" content="Anton Yun" >
-<meta name="date" content="2017-06-06T06:21:52+0800" >
+<meta name="date" content="2017-07-03T04:16:29+0900" >
 <meta name="copyright" content="">
 <meta name="keywords" content="">
 <meta name="description" content="">
@@ -15,274 +15,121 @@
 <meta http-equiv="expires" content="0">
 <link href="" rel="stylesheet" type="text/css">
 <style type="text/css">
-	body{
+	body {
 		margin: 0;
-		color: #696969;	
+		padding: 0;
+		background-color: #FFFFFF;
+		color: #696969;
+		font-family: sans-serif;
 	}
-	/* grid */
-	.container {
-		display: grid;
-		grid-template-columns: 1fr;
-		grid-column-gap: 10px;
-		grid-row-gap: 10px;
-	}
-
-	/* specific item styles */
-  
- 	.container > * {
-		background-color: inherit;
-	}
-	@media only screen and (min-width: 1000px) and (max-width: 1239px) {
 	
-		/* grid */
-		.container {
-			grid-template-columns: repeat(10, 1fr);
-			grid-template-rows: 20px auto;
-			grid-column-gap: 10px;
-			grid-row-gap: 10px;
-		}
-
-		/* specific item styles */
-		.container .empty-row {
-			grid-area: 1 / 1 / 2 / 11;
-		}
-		
-		.container .logo {
-			grid-area: 2 / 2 / 3 / 3;
-			justify-self: center;
-			align-self: center;
-		}
-		
-		.container .logo img{
-			width: 100%;
-		}
-
-		.container header {
-			grid-area: 2 / 3 / 3 / 5;
-			justify-self: center;
-			align-self: center;
-		}
-		
-		.container header img{
-			width: 100%;
-		}		
-		
-		.container nav {
-			grid-area: 3 / 2 / 4 / 10;
-			align-self: center;
-		}
-		
-		.container nav ul {
-			padding-left: 0;
-			padding-right: 0;
-			padding-top: 10px;
-			padding-bottom: 10px;
-			background-color: #F5F5F5;
-		}
-		
-		.container nav ul li {
-			display: inline;
-			list-style-type: none;
-			margin-left: 20px;
-			margin-right: 20px;
-			font-size: 22px;
-			font-family: 'Source Sans Pro', sans-serif;
-			font-weight: bold;
-		}
-
-		.container section {
-			grid-column: 2 / 10;
-		}
-		
-		.container section h1 {
-			font-size: 26px;
-			font-family: sans-serif;
-			font-weight: bolder;
-			color: #262261;
-		}
-		.container section p {
-			font-size: 16px;
-			font-family: sans-serif;
-			font-weight: normal;
-			color: inherit;
-		}
-		.container section p span {
-			font-size: 16px;
-			font-family: sans-serif;
-			font-weight: normal;
-			color: #FC3468;
-		}
-		
-		.container footer {
-			grid-column: 1 / 11;
-			text-align: center;
-			background-color: #F5F5F5;
-		}
-		.container footer img {
-			margin-top: 10px;
-		}
-		
-		.container footer h6 {
-			margin-top: 0;
-			margin-bottom: 10px;
-		}
+	a {
+		color: inherit;
+		text-decoration: none;
+	}
+	
+	header {
+		width: 1000px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-top: 30px;
+		padding-bottom: 30px;
+		text-align: left;
+	}
+	
+	header img {
+		margin-right: 20px;
+		vertical-align: middle;
 	}
 		
-	@media only screen and (min-width: 1240px) {
+	h1 {
+		color: #262261;
+	}
+	
+	.wrapper {
+		display: block;
+		width: 1000px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	blockquote {
+		display: block;
+		position: relative;
+		margin-left: 150px;
+		margin-top: 50px;
+		margin-bottom: 75px;
+		padding-left: 40px;
+		padding-top: 10px;
+		width: 500px;
+		font-family: Georgia, serif;
+		font-size: 20px;
+		font-style: italic;	
+	}
+	
+	blockquote:before {
+		display: block;
+		position: absolute;
+		padding-left: 10px;
+		content: "\201C";
+		font-family: Georgia, serif;
+		font-size: 80px;
+		left: -20px;
+		top: -20px;
+	}
 
-		/* grid */
-		.container {
-			grid-template-columns: repeat(10, 1fr);
-			grid-template-rows: 20px auto;
-			grid-column-gap: 10px;
-			grid-row-gap: 10px;
-		}
-
-		/* specific item styles */
-		.container .empty-row {
-			grid-area: 1 / 1 / 2 / 11;
-		}
-		
-		.container .logo {
-			grid-area: 2 / 2 / 3 / 3;
-			justify-self: center;
-			align-self: center;
-		}
-
-		.container .logo img{
-			width: 100%;
-		}
-
-		.container header {
-			grid-area: 2 / 3 / 3 / 5;
-			justify-self: center;
-			align-self: center;
-		}
-		
-		.container header img{
-			width: 100%;
-		}		
-		
-		.container nav {
-			grid-area: 2 / 5 / 3 / 10;
-			align-self: center;
-		}
-		
-		.container nav ul {
-			padding-left: 0;
-			padding-right: 0;
-			padding-top: 10px;
-			padding-bottom: 10px;
-			background-color: #F5F5F5;
-		}
-		
-		.container nav ul li {
-			display: inline;
-			list-style-type: none;
-			margin-left: 20px;
-			margin-right: 20px;
-			font-size: 22px;
-			font-family: 'Source Sans Pro', sans-serif;
-			font-weight: bold;
-		}
-
-		.container section {
-			grid-column: 2 / 10;
-		}
-		
-		.container section h1 {
-			font-size: 26px;
-			font-family: sans-serif;
-			font-weight: bolder;
-			color: #262261;
-		}
-		.container section p {
-			font-size: 16px;
-			font-family: sans-serif;
-			font-weight: normal;
-			color: inherit;
-		}
-		.container section p span {
-			font-size: 16px;
-			font-family: sans-serif;
-			font-weight: normal;
-			color: #FC3468;
-		}
-		
-		.container footer {
-			grid-column: 1 / 11;
-			text-align: center;
-			background-color: #F5F5F5;
-		}
-		.container footer img {
-			margin-top: 10px;
-		}
-		
-		.container footer h6 {
-			margin-top: 0;
-			margin-bottom: 10px;
-		}
+	.footer-row {
+		display: block;
+		text-align: center;
+		background-color: #F5F5F5;	
+	}
+	
+	.footer-group {
+		display: inline-block;
+		min-width: 200px;	
+	}
+	
+	#footer-info {
+		padding-top: 15px;
+		padding-bottom: 15px;
+		font-weight: bold;
+		font-size: 20px;
+	}
+	
+	#footer-copyright {
+		padding-top: 7px;
+		padding-bottom: 7px;
+		font-size: 12px;
 	}
 </style>
 </head>
 <body>
-<div class="container">
-	<div class="empty-row"></div>
-	<div class="logo"><img src="logo.png" alt="logo"></div>
-	<header><img src="name.png" alt="XIAODONG IT Consulting"></header>
-	<nav>
-		<ul>
-			<li>HOME</li>
-			<li>SERVICES</li>
-			<li>ABOUT US</li>
-			<li>CONTACT</li>
-		</ul>
-	</nav>
-	<section>
-		<h1>Welcome to XIAODONG IT Consulting</h1>
-		<p>XIAODONG is freelance profecional IT consulting for business organizations.
-		We focuse on advising organizations on how best to use information technology
-		in achieving their business objectives, provide advice, estimate, manage,
-		implement, deploy, and administer IT systems on behalf of their client organizations.</p>
-	</section>
-	<section>
-		<h1>XIAODONG Services</h1>
-		<p>We offer:
-			<ul>
-				<li>Learn and analyse business process</li>
-				<li>Visualize business process by <b>Unified Modeling Language</b></li>
-				<li>Develop effective functional model of business process</li>
-				<li>Create <b>MySQL/Oracle</b> based IT system for its effective control</li>
-				<li>Install and manage <b>Linux</b> based servers</li>
-				<li>Build corporative local network with security items</li>
-				<li>Create your company’s <b>web-site design</b> to achieve high users usability</li>
-				<li><b>Back-end</b> & <b>Front-end</b> Web development for effective relations with your customers</li>				
-				<li>Develope special software solutions (<b>Android OS Apps</b>, thick clients)</li>
-			</ul>
-			We use GIT version control system on each step for easy cooperation with our clients. 
-		</p>
-	</section>
-	<section>
-		<h1>About Us</h1>
-		<p>Our advantages:
-			<ul>
-				<li>We use version control system Git for coordinate work and real-time cooperate with our clients
-				on each step execution of projects.</li>
-				<li>We use The Unified Modeling Language (UML), that is intended to provide a standard way to visualize
-				the design of a system.</li>
-			</ul>
-		</p>
-	</section>
-	<section>
-		<h1>Contact</h1>
-		<p><span>IT Consultant:</span> Anton Iun</p>
-		<p><span>Tel:</span> 7 (967) 251 3937 </p>
-		<p><span>E-mail:</span> iunanton@mail.ru</p>
-	</section>
+	<header>
+		<img src="images/logo.png" alt="logo" height="120px">
+		<img src="images/name.png" alt="xiaodong" height="90px">	
+	</header>
+	<div class="wrapper">
+		<article>
+			<h1>Welcome to XIAODONG IT Consulting!</h1>
+			<blockquote>Application Development Services, Programming Resources and Outsourcing to Companies across the Asia Pacific Region</blockquote>
+			<h1 id="about-us">About Us:</h1>
+			<p>We are freelance professional IT consulting for <strong>small</strong> and <strong>medium business</strong>.</p>
+			<p>We focus on investigation of the existing business process.</p>
+			<p>We use the latest achievements in the field of information technology to develop and implementation Software solutions which reaches <strong>company's goals</strong>, reduces the share of manual routine in <strong>document circulation</strong>, <strong>transparently controls</strong> over the business process and finally helps <strong>general automation</strong> of work.</p>
+			<p>We support our solutions and always work to improve it.</p>			
+			<p>For now, XIAODONG offers IT consulting service as a self-employed freelancer, but sets goal to create a specialized corporate body in near future.</p>
+			<h1 id="contact-us">Contact Us:</h1>
+			<p>Anton Iun: +7 (967) 2513937 iunanton@mail.ru</p>
+		</article>
+	</div>
 	<footer>
-		<img src="logo.png" alt="logo" width="64" height="64">
-		<h6>Copyright © 2016 - 2017 XIAODONG IT Consulting </h6>
+		<div class="footer-row" id="footer-info">
+			<div class="footer-group"><a href="#">Home</a></div>
+			<div class="footer-group"><a href="#about-us">About Us</a></div>
+			<div class="footer-group"><a href="#contact-us">Contact Us</a></div>
+			<div class="footer-group"><a href="#">Go Up</a></div>		
+		</div>
+		<div class="footer-row" id="footer-copyright">Copyright © 2016-2017 <a href="http://xiaodong.com.ru">XIAODONG IT Consulting</a></div>	
 	</footer>
-</div>
 </body>
 </html>
